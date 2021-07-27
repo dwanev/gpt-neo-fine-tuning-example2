@@ -1,0 +1,9 @@
+# requirements used on my GPU machine (ubuntu 18.4)
+# python 3.7.1
+numpy==1.17.3
+pandas==1.2.2
+torch==1.8.1
+torchvision==0.9.1
+torchsummary==1.5.1
+transformers==4.5.0
+deepspeed==0.4.3
