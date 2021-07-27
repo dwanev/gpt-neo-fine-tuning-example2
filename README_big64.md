@@ -4,8 +4,17 @@
 
 
 
+- 1 Install cudo 10.2 on the machine
 
-- 1 Copy to GPU machine
+  wget https://developer.download.nvidia.com/compute/cuda/10.2/Prod/local_installers/cuda_10.2.89_440.33.01_linux.run
+
+  sudo sh cuda_10.2.89_440.33.01_linux.run
+
+- 2 Add Cuda 10 to the path (if not already)
+
+  ./script_cuda10_gpu_setup.sh
+  
+- 3 Copy latest code to GPU machine
   
   ./script_sync_to_big_64.sh
 
@@ -17,14 +26,13 @@
 
    conda activate gpt-neo
 
-- 4 Add Cuda 10 to the path (if not already)
-
-  ./script_cuda10_gpu_setup.sh
 
 - 5 Run the training
 
   python gpt_neo_xl_deepspeed.py
 
 
+- 6 Watch the GPU utilization
 
-
+ssh dwane@192.168.0.60
+nvidia-smi
