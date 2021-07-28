@@ -3,7 +3,7 @@ os.environ['MASTER_ADDR'] = 'localhost'
 os.environ['MASTER_PORT'] = '9994'
 os.environ['RANK'] = "0"
 os.environ['LOCAL_RANK'] = "0"
-os.environ['WORLD_SIZE'] = "2"   # parallalism
+os.environ['WORLD_SIZE'] = "1"   # parallalism
 import pandas as pd
 import torch
 from torch.utils.data import Dataset, random_split

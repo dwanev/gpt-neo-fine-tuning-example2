@@ -36,3 +36,23 @@
 
 ssh dwane@192.168.0.60
 nvidia-smi
+
+
+
+28th July 2021 Status
+
+Main machine
+   gpt_neo - trains - did not wait for completeion - may take about 14 hrs  - 30 sec per it
+
+big64
+  gpt_neo - trains - ? 
+
+  gpt_neo_xl_deepspeed 
+      ds_config.json - trains only uses 1 GPU - takes 11 sec per it - 17520 it =  
+
+      ds_config_zero3.json - complains that config is not correct - 'auto' can not be parsed as int etc
+
+
+      
+            
+    
